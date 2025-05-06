@@ -1,6 +1,7 @@
 [user]
 	email = richard.dorian@outlook.com
 	name = RichardDorian
+	signingkey = <GPG_KEY_ID>
 
 [core]
 	editor = nano
@@ -8,3 +9,9 @@
 [credential]
 	helper = manager
 	credentialStore = gpg
+
+[commit]
+	gpgsign = true
+
+[gpg]
+	program = gpg
