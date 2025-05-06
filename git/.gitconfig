@@ -1,0 +1,10 @@
+[user]
+	email = richard.dorian@outlook.com
+	name = RichardDorian
+
+[core]
+	editor = nano
+
+[credential]
+	helper = manager
+	credentialStore = gpg
