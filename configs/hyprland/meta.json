@@ -1,0 +1,17 @@
+[
+  {
+    "type": "file",
+    "source": "hyprland.conf",
+    "target": "~/.config/hypr/hyprland.conf"
+  },
+  {
+    "type": "script",
+    "source": "laptopAudioMute.sh",
+    "target": "~/.scripts/laptopAudioMute.sh"
+  },
+  {
+    "type": "script",
+    "source": "laptopMicMute.sh",
+    "target": "~/.scripts/laptopMicMute.sh"
+  }
+]

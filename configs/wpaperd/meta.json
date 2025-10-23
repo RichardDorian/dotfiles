@@ -1,0 +1,12 @@
+[
+  {
+    "type": "file",
+    "source": "config.toml",
+    "target": "~/.config/wpaperd/config.toml"
+  },
+  {
+    "type": "script",
+    "source": "onWallpaperUpdate.sh",
+    "target": "~/.scripts/onWallpaperUpdate.sh"
+  }
+]

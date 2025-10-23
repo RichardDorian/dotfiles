@@ -1,0 +1,7 @@
+#!/bin/bash -e
+
+HYPRLOCK_TEMP_CONF="$HOME/.config/hypr/hyprlock.conf.tmp"
+
+$HOME/.scripts/updateHyprlockBackground.sh
+/usr/bin/hyprlock --config "$HYPRLOCK_TEMP_CONF" "$@"
+rm "$HYPRLOCK_TEMP_CONF"

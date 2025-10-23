@@ -1,0 +1,17 @@
+[
+  {
+    "type": "file",
+    "source": "hyprlock.conf",
+    "target": "~/.config/hypr/hyprlock.conf"
+  },
+  {
+    "type": "wrapper",
+    "source": "hyprlock",
+    "target": "/usr/local/bin/hyprlock"
+  },
+  {
+    "type": "script",
+    "source": "updateHyprlockBackground.sh",
+    "target": "~/.scripts/updateHyprlockBackground.sh"
+  }
+]

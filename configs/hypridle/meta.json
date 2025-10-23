@@ -1,0 +1,12 @@
+[
+  {
+    "type": "file",
+    "source": "hypridle.conf",
+    "target": "~/.config/hypr/hypridle.conf"
+  },
+  {
+    "type": "script",
+    "source": "idle1m.sh",
+    "target": "~/.scripts/idle1m.sh"
+  }
+]
