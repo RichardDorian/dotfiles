@@ -1,0 +1,23 @@
+[user]
+  name = RichardDorian
+  email = richard.dorian@outlook.com
+  signingkey = B66EBFDEFEF0CC883FF815F60E66650C1C5B1433
+
+[core]
+  editor = nano
+
+[credential]
+  helper = manager
+  credentialStore = gpg
+
+[commit]
+  gpgsign = true
+
+[gpg]
+  program = gpg
+
+[main]
+  defaultBranch = main
+
+[init]
+  defaultBranch = main
