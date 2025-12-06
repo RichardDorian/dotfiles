@@ -1,0 +1,12 @@
+#!/bin/bash -e
+
+if [[ "$1" == "--install" ]]; then
+  sudo cp "$0" /usr/local/bin/hyprlock
+  exit
+fi
+
+HYPRLOCK_TEMP_CONF="$HOME/.config/hypr/hyprlock.conf.tmp"
+
+$HOME/.scripts/updateHyprlockBackground.sh
+/usr/bin/hyprlock --config "$HYPRLOCK_TEMP_CONF" "$@"
+rm "$HYPRLOCK_TEMP_CONF"

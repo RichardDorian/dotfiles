@@ -1,0 +1,6 @@
+[default]
+path = "/data/Pictures/Alena Aenami"
+duration= "5m"
+sorting= "random"
+mode = "center"
+exec = "~/.scripts/onWallpaperUpdate.sh"
