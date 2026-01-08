@@ -1,0 +1,11 @@
+[Unit]
+Description=Hyprland Wayland Session
+After=graphical-session.target
+
+[Service]
+ExecStart=/usr/bin/start-hyprland
+Restart=no
+Environment=XDG_SESSION_TYPE=wayland
+
+[Install]
+WantedBy=default.target
