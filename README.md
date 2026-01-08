@@ -13,3 +13,24 @@ Install the [`chezmoi`](https://chezmoi.io) tool and run this command to downloa
 ```bash
 chezmoi init --apply RichardDorian
 ```
+
+## Bash aliases
+
+In order to get bash aliases, add this to your `.bashrc`
+
+```sh
+if [ -f ~/.bash_aliases ]; then
+  . ~/.bash_aliases
+fi
+```
+
+## Systemd services
+
+I use systemd for starting various services like hyprland, wpaperd etc. This repo includes them. For new setup, include them by running
+
+```sh
+systemctl --user enable hyprland.service
+systemctl --user enable wpaperd.service
+```
+
+The `hyprland.service` makes hyprland start upon login. `wpaperd.service` are automatically started by `hyprland-session.target`.
