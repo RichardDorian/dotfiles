@@ -3,7 +3,7 @@
   email = richard.dorian@outlook.com
   signingkey = B66EBFDEFEF0CC883FF815F60E66650C1C5B1433
 
-[includeIf "gitdir:/data/School/"]
+[includeIf "gitdir:~/School/"]
   path = ~/.school.gitconfig
 
 [core]
