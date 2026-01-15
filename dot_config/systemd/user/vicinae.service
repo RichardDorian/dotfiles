@@ -1,0 +1,11 @@
+[Unit]
+Description=vicinae launcher daemon
+After=hyprland-session.target
+PartOf=hyprland-session.target
+
+[Service]
+ExecStart=/usr/bin/vicinae server
+Restart=on-failure
+
+[Install]
+WantedBy=hyprland-session.target
