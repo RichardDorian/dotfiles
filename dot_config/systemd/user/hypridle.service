@@ -1,0 +1,11 @@
+[Unit]
+Description=idle management daemon.
+After=hyprland-session.target
+PartOf=hyprland-session.target
+
+[Service]
+ExecStart=/usr/bin/hypridle
+Restart=on-failure
+
+[Install]
+WantedBy=hyprland-session.target
