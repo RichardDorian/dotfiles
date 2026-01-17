@@ -31,6 +31,15 @@ I use systemd for starting various services like hyprland, wpaperd etc. This rep
 ```sh
 systemctl --user enable hyprland.service
 systemctl --user enable wpaperd.service
+systemctl --user enable vicinae.service
 ```
 
 The `hyprland.service` makes hyprland start upon login. `wpaperd.service` are automatically started by `hyprland-session.target`.
+
+## Sound
+
+For sound, I use `pipewire` and `wireplumber`.
+
+### MPRIS & Bluetooth
+
+In order for bluetooth headset controls (play, pause, ...) make sure to have the `bluez-utils` package and enable the `mpris-proxy` user systemd service.
