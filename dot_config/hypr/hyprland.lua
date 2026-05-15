@@ -1,0 +1,5 @@
+require("autostart")
+require("monitors")
+require("general")
+require("input")
+require("keybinds")
