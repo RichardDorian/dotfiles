@@ -1,6 +1,7 @@
 alias decker='docker'
 alias dcu='docker compose up -d'
 alias dcd='docker compose down'
+alias dcw='docker compose up --watch --build'
 
 alias dpwau='docker compose -f docker-compose.dev.yaml up -d'
 alias dpwad='docker compose -f docker-compose.dev.yaml down'
