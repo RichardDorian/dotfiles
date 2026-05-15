@@ -11,9 +11,9 @@ if [ "$#" -ne 1 ]; then
 fi
 
 if [ "$status" = "closed" ] && [ "$monitorCount" -gt "1" ]; then
-  hyprctl keyword monitor "$internalMonitor, disable"
+  hyprctl eval "hl.monitor({ output = \"$internalMonitor\", disabled = true })"
 fi
 
 if [ "$status" = "open" ]; then
-  hyprctl keyword monitor "$internalMonitor, 1920x1200@60, 0x0, 1" > /dev/null
+  hyprctl eval "hl.monitor({ output = \"$internalMonitor\", disabled = false })"
 fi
