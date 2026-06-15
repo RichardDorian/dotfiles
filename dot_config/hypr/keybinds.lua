@@ -8,10 +8,7 @@ hl.bind("SUPER + code:54", hl.dsp.exec_cmd("google-chrome-stable"))             
 hl.bind("SUPER + code:33", hl.dsp.exec_cmd("hyprpicker"))                                             -- P
 hl.bind("SUPER + code:43", hl.dsp.exec_cmd("vicinae vicinae://extensions/vicinae/clipboard/history")) -- H
 
-local screenshot = hl.dsp.exec_cmd("hyprshot -o ~/Pictures/Screenshots -m region")
-hl.bind("PRINT", screenshot)
-hl.bind("XF86Display", screenshot)
-
+hl.bind("PRINT", hl.dsp.exec_cmd("hyprshot -o ~/Pictures/Screenshots -m region"))
 hl.bind("ALT + SPACE", hl.dsp.exec_cmd("vicinae toggle"))
 
 -- Workspaces
