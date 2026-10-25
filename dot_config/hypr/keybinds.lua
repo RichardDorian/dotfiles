@@ -4,7 +4,7 @@ hl.bind("SUPER + code:26", hl.dsp.exec_cmd("nautilus"))                         
 hl.bind("SUPER + code:55", hl.dsp.window.float())                                                     -- V
 hl.bind("SUPER + code:41", hl.dsp.window.fullscreen({ mode = "maximized" }))                          -- F
 hl.bind("SUPER + code:46", hl.dsp.exec_cmd("hyprlock"))                                               -- L
-hl.bind("SUPER + code:54", hl.dsp.exec_cmd("google-chrome-stable"))                                   -- C
+hl.bind("SUPER + code:54", hl.dsp.exec_cmd("chromium"))                                               -- C
 hl.bind("SUPER + code:33", hl.dsp.exec_cmd("hyprpicker"))                                             -- P
 hl.bind("SUPER + code:43", hl.dsp.exec_cmd("vicinae vicinae://extensions/vicinae/clipboard/history")) -- H
 
