@@ -34,13 +34,13 @@ hl.monitor({
   mode = "2560x1440@120",
   position = "0x0",
   scale = 1,
-  bitdepth = 10,
-  cm = "auto",
+  bitdepth = 10, -- HDMI port can't to 1440p@120Hz with 10bit but Hyprland will do its processing in 10bit which is still better than nothing
+  cm = "srgb", -- If using wide (auto = wide because 10bit), hyprland converts srgb to BT.2020 but monitor ignores them because it is not in HDR mode 
   sdr_eotf = "gamma22",
   sdr_min_luminance = 0.005,
   sdr_max_luminance = 200,
   min_luminance = 0,
-  max_luminance = 450,
+  max_luminance = 450, -- Certification is at least 400 nits, reviews tell 450 nits
   max_avg_luminance = 250,
   vrr = 0
 })
