@@ -1,7 +1,7 @@
 [user]
   name = RichardDorian
-  email = richard.dorian@outlook.com
-  signingkey = B66EBFDEFEF0CC883FF815F60E66650C1C5B1433
+  email = git@drichard.dev
+  signingkey = 5B1EA7691C17C5647D3BA71CC12BA14FF033E67E
 
 [includeIf "gitdir:~/School/"]
   path = ~/.school.gitconfig
