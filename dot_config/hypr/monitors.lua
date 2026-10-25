@@ -30,18 +30,19 @@ hl.monitor({
 -- Home monitor
 
 hl.monitor({
-  output = "desc:AOC AG276QZD2 2RLR7JA002795",
-  mode = "2560x1440@100",
-  scale = "1",
+  output = "desc:AOC AG276QZD2",
+  mode = "2560x1440@120",
+  position = "0x0",
+  scale = 1,
   bitdepth = 10,
-  vrr = true,
-  supports_hdr = true,
-  supports_wide_color = true,
-  sdr_min_luminance = 0,
-  sdr_max_luminance = 250,
+  cm = "auto",
+  sdr_eotf = "gamma22",
+  sdr_min_luminance = 0.005,
+  sdr_max_luminance = 200,
   min_luminance = 0,
-  max_luminance = 1000,
-  max_avg_luminance = 450,
+  max_luminance = 450,
+  max_avg_luminance = 250,
+  vrr = 0
 })
 
 -- Fallback configuration for other monitors
